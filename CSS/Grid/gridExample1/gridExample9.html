@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+	<style>
+		.wrapper {
+		  display: grid;
+		  grid-template-columns: repeat(3, 1fr);
+		  grid-auto-rows: minmax(100px, auto);
+		  column-gap: 10px;
+		  row-gap: 1em;
+		  background-color: orange;
+		}
+		.block{
+			background-color: green;
+			border: 3px solid black;
+		}
+		.box1 { 
+		  grid-column-start: 1; 
+		  grid-column-end: 4; 
+		  grid-row-start: 1; 
+		  grid-row-end: 3; 
+		  background-color: green;
+		  border: 3px solid black;
+		}
+
+		.box2 { 
+		  grid-column-start: 1; 
+		  grid-row-start: 3; 
+		  grid-row-end: 5; 
+		  background-color: green;
+		  border: 3px solid black;
+		}
+	</style>
+  </head>
+  <body>
+	<div class="wrapper">
+	<!--  all direct children of that element become grid items. -->
+	  <div class="box1">One</div>
+	  <div class="box2">Two
+	      <p>I have some more content in.</p>
+		  <p>This makes me taller than 100 pixels.</p>
+	  </div>
+	  <div class="block">Three</div>
+	  <div class="block">Four</div>
+	  <div class="block">Five</div>
+	  <div class="block">Six</div>
+	  <div class="block">Seven</div>
+	  <div class="block">Eight</div>
+	  <div class="block">Nine</div>
+	  <div class="block">Ten</div>
+	</div>
+  </body>
+</html>
