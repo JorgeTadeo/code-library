@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+	<style>
+	.container {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-gap: 20px;
+		grid-auto-rows: 100px;;
+	}
+	.block{
+		background-color: green;
+		border: 3px solid black;
+	}
+	.block1{
+		grid-column: 1 / 13;
+	}
+	.block2{
+		grid-column: 1 / 3;
+		grid-row: 2/8;
+	}
+	.block3{
+		grid-column: 3 / 13;
+		grid-row: 2/5;
+	}
+	
+	.block4{
+		grid-column: 3 / 13;
+		grid-row: 5/8;
+	}
+	.block5{
+		grid-column: 1 / 13;
+		grid-row: 8;
+	}
+	</style>
+  </head>
+  <body class="container">
+	  <div class="block block1">one</div>
+	  <div class="block block2">two</div>
+  	  <div class="block block3">Three</div>
+	  <div class="block block4">Four</div>
+	  <div class="block block5">Five</div>
+	  <div class="block">Six</div>
+	  <div class="block">Seven</div>
+	  <div class="block">Eight</div>
+	  <div class="block">Nine</div>
+	  <div class="block">Ten</div>
+	  <div class="block">Eleven</div>
+	  <div class="block">Twelve</div>
+  </body>
+</html>
